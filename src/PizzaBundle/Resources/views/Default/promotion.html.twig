@@ -1,0 +1,128 @@
+{% extends "PizzaBundle::base.html.twig" %}
+    
+{% block pageTitle %}Promocje{% endblock %}
+    
+{% block pageContent%}
+    
+    <div class="row">
+        
+            
+        {#{% for entry in rowsPromotion %}
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 li-img">
+                    <img src="{{asset('uploads/promotion/')}}{{entry.imageName}}" alt="Image Alt Text" />
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 li-text">
+                    <h2 class="li-head">{{ entry.title }}</h2>
+                    <p class="li-summary">{{ entry.description }}</p>
+                    <hr style="margin:0; margin-top: 4px;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <small>Promocja trwa od: {{entry.dataStart|date('d:m:Y')}}</small>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <small>do: {{entry.dataEnd|date('d:m:Y')}}</small>
+                    </div>
+                </div>
+            </div> 
+        {% endfor %}#}
+        {% if rowsPromotion is not empty %}
+        {% for entry in rowsPromotion %}
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 promotion-baner">
+                <div class="box">
+                    
+                    <div class="box-icon">
+                        <span class="fa fa-4x fa-info "></span>
+                    </div>
+                    <div class="wrapper center">
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <h4 class="text-center">{{ entry.title }}</h4>
+                        <p>{{ entry.description }}</p>
+                        
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% else %}
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 promotion-baner">
+                <div class="box">
+                    
+                    <div class="wrapper center">
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                        <div class="slice">
+                            <div class="tomato"></div>
+                            <div class="tomato"></div>
+                            <div class="olive"></div>
+                        </div>
+                    </div>
+    
+                    <div class="info">
+                        <h4 class="text-center">Przepraszamy</h4>
+                        <p style="text-align: center;">W tym momencie nie mamy żadnych promocji</p>
+                        
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+            
+            
+    </div>
+    
+    
+    
+{% endblock %}

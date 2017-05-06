@@ -1,0 +1,51 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+    security.acl.permission.map:
+      class: Sonata\AdminBundle\Security\Acl\Permission\AdminPermissionMap
+
+services:
+    #service_name:
+    #    class: AppBundle\Directory\ClassName
+    #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+    admin.menu:
+        class: PizzaBundle\Admin\MenuAdmin
+        arguments: [~, PizzaBundle\Entity\Menu, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Offerts, label: Menu }
+    
+    admin.sause:
+        class: PizzaBundle\Admin\SauseAdmin
+        arguments: [~, PizzaBundle\Entity\Sause, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm,group: Offerts, label: Sause }
+            
+    admin.appetizer:
+        class: PizzaBundle\Admin\AppetizerAdmin
+        arguments: [~, PizzaBundle\Entity\Appetizer, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm,group: Offerts, label: Appetizer }
+            
+    admin.drink:
+        class: PizzaBundle\Admin\DrinkAdmin
+        arguments: [~, PizzaBundle\Entity\Drink, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Offerts, label: Drink }
+            
+    admin.promotion:
+        class: PizzaBundle\Admin\PromotionAdmin
+        arguments: [~, PizzaBundle\Entity\Product, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Promotion, label: Promotion }
+            
+    admin.contact:
+        class: PizzaBundle\Admin\ContactAdmin
+        arguments: [~, PizzaBundle\Entity\Contact, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Information, label: Contact }   
+            
+    admin.order:
+        class: PizzaBundle\Admin\OrderAdmin
+        arguments: [~, PizzaBundle\Entity\Order, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Order, label: Orders }   

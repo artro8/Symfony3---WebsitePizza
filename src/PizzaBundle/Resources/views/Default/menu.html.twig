@@ -1,0 +1,178 @@
+{% extends "PizzaBundle::base.html.twig" %}
+
+{% block pageTitle %}Menu{% endblock %}
+
+{% block pageContent%}
+    
+    <div class="row">
+        <div class="container">
+            {% if rows is not empty %}
+                <div class="pizze">
+                    <div class="baner-pizza">
+                        <h1>Menu</h1>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Numer</th>
+                                    <th>Nazwa</th>
+                                    <th>Składniki</th>
+                                    <th>Cena (23 cm, 30 cm, 40 cm, 50 cm)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                {% for entry in row %}
+                                    
+                                    <tr>
+                                        <td> {{ loop.index }}</td>
+                                        <td>{{ entry.name }}</td>
+                                        <td>{{ entry.components }}</td>
+                                        <td>
+                                            <ul>
+                                                
+                                                    <li>{{ entry.smallPizza }} zł</li>
+                                                    <li>{{ entry.middlePizza }} zł</li>
+                                                    <li>{{ entry.largPizza }} zł</li>
+                                                    <li>{{ entry.xxlPizza }} zł</li>
+                                                    
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                    
+                    {% if rowsSause is not empty %}
+                        <div class="baner-sos">
+                            <h1>Sosy</h1>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Numer</th>
+                                        <th>Nazwa</th>
+                                        <th>Cena</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for entry in rowsSause %}
+                                        <tr>
+                                            <td>{{ loop.index }}</td>
+                                            <td>{{ entry.name }}</td>
+                                            <td>
+                                                <ul>
+                                                    <li>{{ entry.price }} zł</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="baner-sos">
+                            <h1>Brak sosów</h1>
+                        </div>
+                        <h2 style="text-align: center; color:white;">Przepraszamy</h2>
+                    {% endif %}
+                    
+                    {% if rowsAppetizer is not empty %}
+                    <div class="baner-appetizer">
+                        <h1>Przystawki</h1>
+                    </div>
+                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Numer</th>
+                                    <th>Nazwa</th>
+                                    <th>Ilość</th>
+                                    <th>Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                {% for entry in rowsAppetizer %}
+                                    
+                                        <tr>
+                                            <td>{{ loop.index }}</td>
+                                            <td>{{ entry.name }}</td>
+                                            <td>{{ entry.quantity }} g</td>
+                                            <td>
+                                                <ul>
+                                                    <li>{{ entry.price }} zł</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                        <div class="baner-appetizer">
+                            <h1>Brak przystawek</h1>
+                        </div>
+                        <h2 style="text-align: center; color:white;">Przepraszamy</h2>
+                    {% endif %}
+                       
+                    {% if rowsDrink is not empty %}
+                    <div class="baner-drink">
+                        <h1>Napoje</h1>
+                    </div>
+                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Numer</th>
+                                    <th>Nazwa</th>
+                                    <th>Pojemność</th>
+                                    <th>Cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for entry in rowsDrink %}
+                                        <tr>
+                                            <td>{{ loop.index }}</td>
+                                            <td>{{ entry.name }}</td>
+                                            <td>{{ entry.quantity }} ml</td>
+                                            <td>
+                                                <ul>
+                                                    <li>{{ entry.price }} zł</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                        <div class="baner-drink">
+                            <h1>Brak napojów</h1>
+                        </div>
+                        <h2 style="text-align: center; color:white;">Przepraszamy</h2>
+                    {% endif %}
+                    
+                    
+                    
+                </div>
+            {% else %}
+                <div class="pizze">
+                <div class="baner-pizza">
+                    <h1>W tym momencie mamy puste menu</h1>
+                </div>
+                <h2 style="text-align: center; color:white;">Przepraszamy</h2>
+                </div>
+            {% endif %}
+        </div>
+        <!--</div>-->
+    </div>
+    
+{% endblock %}
