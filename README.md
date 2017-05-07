@@ -1,7 +1,7 @@
 Symfony3 - PizzaCMS
 ========================
 
-PizzaCMS is project which uses framework Symfony 3. This project allows change menu from level administration panel. We must adding a new promotion offerts. If our business date will have to be changed, the panel provide this option.
+PizzaCMS is project which uses framework Symfony 3. This project allows to change menu from level administration panel. We must adding a new promotion offerts. If our business date will have to be changed, the panel provide this option.
 
 Project configuration
 ========================
