@@ -26,14 +26,14 @@ Installation Instructions
 ========================
 
 At first you must git clone
-- git clone https://github.com/artro8/Symfony3---WebsitePizza.git
-
-Subsequently in console you must use command
+~~~
+git clone https://github.com/artro8/Symfony3---WebsitePizza.git
+~~~
+Generate database using command:
 
 - php bin/console database:generate:entity --force
 
-If you must install databse you must create your account to administration panel.
-In console you must use 
+After importing the database create an admin user using command:
 
 - php bin/console fos:user:create 
 
