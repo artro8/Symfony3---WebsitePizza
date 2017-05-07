@@ -20,6 +20,7 @@ Used Bundles
 Installation Instructions
 ========================
 
-sadsd
+At first you must git clone
+- git clone https://github.com/artro8/
 
 
