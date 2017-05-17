@@ -42,9 +42,13 @@ I wish you lots of fun :)
 Photos
 ========================
 
-Home
+Home Page
 
 ![home](https://cloud.githubusercontent.com/assets/17146309/26152147/0a303886-3b06-11e7-820a-aeb6d101f5b1.png)
+
+Content on the home page
+
+![home](https://cloud.githubusercontent.com/assets/17146309/26152249/71a99610-3b06-11e7-8c01-9056d08e6ad8.png)
 
 
 
