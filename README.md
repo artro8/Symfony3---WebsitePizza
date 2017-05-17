@@ -44,6 +44,7 @@ Photos
 
 Home
 
-![home](https://cloud.githubusercontent.com/assets/17146309/26152059/c41c41be-3b05-11e7-97d9-f8d9747e3024.png)
+![home](https://cloud.githubusercontent.com/assets/17146309/26152147/0a303886-3b06-11e7-820a-aeb6d101f5b1.png)
+
 
 
