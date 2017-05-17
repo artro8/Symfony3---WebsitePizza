@@ -39,6 +39,11 @@ php bin/console fos:user:create
 ~~~
 I wish you lots of fun :)
 
+Photos
+========================
 
+Home
+
+![home](https://cloud.githubusercontent.com/assets/17146309/26152059/c41c41be-3b05-11e7-97d9-f8d9747e3024.png)
 
 
