@@ -48,7 +48,7 @@ Home Page
 
 Content on the home page
 
-![home](https://cloud.githubusercontent.com/assets/17146309/26152249/71a99610-3b06-11e7-8c01-9056d08e6ad8.png)
+![home](https://cloud.githubusercontent.com/assets/17146309/26152293/a55e29f8-3b06-11e7-9ff0-6961df1a3851.png)
 
 
 
