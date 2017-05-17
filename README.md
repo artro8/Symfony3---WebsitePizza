@@ -52,5 +52,5 @@ Content on the home page
 
 Admin Panel
 
-![admin](https://cloud.githubusercontent.com/assets/17146309/26152344/dcca4dfe-3b06-11e7-93d5-595a4100b082.png)
+![admin](https://cloud.githubusercontent.com/assets/17146309/26152425/211ffd96-3b07-11e7-87ab-f5c828407b54.png)
 
