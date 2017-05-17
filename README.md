@@ -50,5 +50,7 @@ Content on the home page
 
 ![home](https://cloud.githubusercontent.com/assets/17146309/26152293/a55e29f8-3b06-11e7-9ff0-6961df1a3851.png)
 
+Admin Panel
 
+![admin](https://cloud.githubusercontent.com/assets/17146309/26152344/dcca4dfe-3b06-11e7-93d5-595a4100b082.png)
 
