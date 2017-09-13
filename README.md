@@ -54,3 +54,5 @@ Admin Panel
 
 ![admin](https://cloud.githubusercontent.com/assets/17146309/26152425/211ffd96-3b07-11e7-87ab-f5c828407b54.png)
 
+Email Contact
+jakub.wydra.freelancer@interia.pl
